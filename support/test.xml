@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<competitions>
+	<competition>
+		<title>Vijaya Yatra</title>
+		<from>17/12/2013</from>
+		<to>31/12/2013</to>
+		<condition>60 policies or 6 lakhs premium</condition>
+		<prize>Trip to Tirupati, Tirumala, Kanipakam, Sri Kalahasthi, Sri Puram Golden Temple</prize>
+	</competition>
+	<competition>
+		<title>One Day Centurion</title>
+		<from>1/12/2013</from>
+		<to>11/12/2013</to>
+		<condition>100 policies</condition>
+		<prize>100 Dairies</prize>
+	</competition>
+	<competition>
+		<title>Two Day Centurion</title>
+		<from>1/12/2013</from>
+		<to>11/12/2013</to>
+		<condition>100 policies/ 1 crore premium</condition>
+		<prize>Trip to Tirupati, Tirumala, Kanipakam, Sri Kalahasthi, Sri Puram Golden Temple</prize>
+	</competition>
+</competitions>

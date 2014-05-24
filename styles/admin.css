@@ -1,0 +1,252 @@
+*{
+	margin:0;
+	padding:0;
+	border:none;
+	vertical-align:baseline;
+}
+body{
+	background:#FFFFFF;
+}
+#login_panel{
+	position:relative;
+	margin:auto;
+	background:#E7E7E7;
+	width:316px;
+	top:150px;
+	padding:50px;
+	line-height:40px;
+	box-shadow:0px 0px 5px #333333;
+	border-radius:3px;
+}
+#login_panel #load{
+	position:absolute;
+	width:316px;
+	height:400px;
+	z-index:999;
+	display:none;
+	overflow:hidden;
+	background:rgba(255,255,255,0.8);
+	text-align:center;
+}
+#login_panel #load img{
+	width:35px;
+}
+
+#login_panel input.textbox{
+	width:300px;
+	height:44px;
+	line-height:normal;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	border-top:1px solid #999999;
+	border-left:1px solid #999999;
+	border-bottom:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+	border-radius:1px;
+	color:#333333;
+	padding:0px 8px;
+}
+
+#login_panel input.button{
+	width:316px;
+	height:40px;
+	border-radius:3px;
+	background:#024282;
+	color:#FFFFFF;
+	font-family:Open Sans, Helveltica, Arial, sans-serif;
+	font-size:16px;
+	line-height:normal;
+	text-align:center;
+	font-weight:400;
+	border:1px solid #024282;
+	margin:10px 0px;
+}
+
+#login_panel input.button:hover{
+	border:1px solid #004080;
+}
+
+#login_panel p{
+	color:#333333;
+	float:left;
+	width:200px;
+	display:block;
+}
+#login_panel #error{
+	color:#FF0000;
+	float:left;
+	width:300px;
+	display:block;
+}
+#status{
+	display: none;
+	width:30%;
+	height:32px;
+	line-height: 35px;
+	position: fixed;
+	margin: auto;
+	top: 0;
+	left: 35%;
+	background: #fffb83;
+	font-family: OpenSans, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	border-radius: 3px;
+	text-align: center;
+}
+#agents{
+	width:1000px;
+	margin:auto;
+	display:block;
+	overflow:hidden;
+}
+h1 {
+	font-family:Roboto Condensed, Helvetica, Arial, sans-serif;
+	font-weight:normal;
+	font-size:32px;
+}
+
+#agents .textbox{
+	width:300px;
+	height:44px;
+	line-height:normal;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	border-top:1px solid #999999;
+	border-left:1px solid #999999;
+	border-bottom:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+	border-radius:1px;
+	color:#333333;
+	padding:0px 8px;
+}
+#agents .button{
+	width:316px;
+	height:40px;
+	border-radius:3px;
+	background:#024282;
+	color:#FFFFFF;
+	font-family:Open Sans, Helveltica, Arial, sans-serif;
+	font-size:16px;
+	line-height:normal;
+	text-align:center;
+	font-weight:400;
+	border:1px solid #024282;
+	margin:10px 0px;
+}
+#agent_add{
+	width:316px;
+	padding:50px;
+	background:#E7E7E7;
+	box-shadow:0px 0px 5px #333333;
+	border-radius:3px;
+	line-height:40px;
+	float:left;
+	margin:25px;
+}
+#agent_del{
+	width:316px;
+	padding:50px;
+	background:#E7E7E7;
+	box-shadow:0px 0px 5px #333333;
+	border-radius:3px;
+	line-height:40px;
+	float:left;
+	margin:25px;
+}
+#competitions_del{
+	width:900px;
+	background:#E7E7E7;
+	border-radius:3px;
+	box-shadow:0px 0px 5px #333333;
+	padding:50px;
+	margin:20px auto;
+}
+#competitions_del table{
+	border-collapse:collapse;
+	text-align:center;
+	line-height:32px;
+	width:100%;
+}
+#competitions_del table, td{
+	border:1px solid #555555;
+}
+#competitions_del td{
+	font-family:Open Sans, Helvetica, Arial, sans-serif;
+	font-weight:normal;
+	font-size:16px;
+}
+#competitions_del button{
+	width:116px;
+	height:32px;
+	border-radius:3px;
+	background:#024282;
+	color:#FFFFFF;
+	font-family:Open Sans, Helveltica, Arial, sans-serif;
+	font-size:16px;
+	line-height:normal;
+	text-align:center;
+	font-weight:400;
+	border:1px solid #024282;
+	margin:5px 20px;
+}
+#competitions_del .title{
+	width:40%;
+}
+#competitions_del .date{
+	width:40%;
+}
+#competitions_add{
+	width:900px;
+	margin:auto;
+	background:#E7E7E7;
+	border-radius:3px;
+	box-shadow:0px 0px 5px #333333;
+	display:block;
+	padding:50px;
+	overflow:hidden;
+}
+#competitions_add .textbox{
+	width:282px;
+	height:44px;
+	line-height:normal;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	border-top:1px solid #999999;
+	border-left:1px solid #999999;
+	border-bottom:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+	border-radius:1px;
+	color:#333333;
+	padding:0px 8px;
+	float:left;
+}
+#competitions_add textarea{
+	width:882px;
+	height:80px;
+	line-height:normal;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	border-top:1px solid #999999;
+	border-left:1px solid #999999;
+	border-bottom:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+	border-radius:1px;
+	color:#333333;
+	padding:0px 8px;
+	float:left;
+}
+#competitions_add .button{
+	width:166px;
+	height:40px;
+	border-radius:3px;
+	background:#024282;
+	color:#FFFFFF;
+	font-family:Open Sans, Helveltica, Arial, sans-serif;
+	font-size:16px;
+	line-height:normal;
+	text-align:center;
+	font-weight:400;
+	border:1px solid #024282;
+	margin:10px 0px;
+	float:left;
+}

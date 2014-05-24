@@ -1,0 +1,15 @@
+<div id="login_panel">
+	<div id="header">
+		<img src="../img/spy.png"/>
+		<p><span class="big">Welcome</span><br> Enter your admin credentials</p>
+	</div>
+    <div id="load"></div>
+    <div id="form">
+	    <form name="admin_login" onsubmit="return verifyForm()" method="post" action="login.php" >
+	        <p id="error"></p>
+	        <input id="usr" name="usr" type="text" placeholder="Your Username" class="textbox"/><br/>
+	        <input id="pwd" name="pwd" type="password" placeholder="Password" class="textbox" /><br>
+	        <input name="submit" type="submit" value="Login" class="button" />
+	    </form>
+	</div>
+</div>

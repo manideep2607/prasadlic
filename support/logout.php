@@ -1,0 +1,9 @@
+<?php
+if(!isset($_SESSION['name'])){
+session_start(); 
+}
+if(isset($_SESSION)){
+	session_destroy();
+}
+include('login_form.php');
+?>

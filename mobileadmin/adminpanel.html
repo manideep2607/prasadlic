@@ -1,0 +1,55 @@
+<div id="container">
+	<div id="menuPage" class="page">
+		<div id="header">
+			<img src="../img/spy.png"/>
+			<p>What do you want to edit?</p>
+		</div>
+		<div id="menu">
+			<button id="agents" onclick="return openAction(1)">Agents</button><br>
+			<button id="competitions" onclick="return openAction(2)">Competitions</button><br>
+			<button id="scroll" onclick="return openAction(3)">Scroll Text</button>
+		</div>
+		<div id="logout">
+			<button onclick="return logout()">Logout</button>
+		</div>
+	</div>
+
+	<div id="actionPage" class="page">
+		<div id="back"><a href="" onclick="return goBack()"><img src="../img/menu.png"/></a></div>
+		<div id="status"></div>
+		<div id="actionTitle">Agents</div>
+		<div id="actionUI">
+			<div id="agents">
+				<div id="agent_add" class="card">
+				    <form id="addAgent" method="post" onSubmit="return addAgent()" action="addAgent.php">
+				        <input type="text" id="code" name="code" placeholder="Agent Code" class="textbox" />
+				        <input type="text" id="name" name="name" placeholder="Agent Name" class="textbox" />
+				        <input type="submit" value="Add Agent" class="button" />
+				    </form>
+				</div>
+				    
+				<div id="agent_del" class="card">
+				    <form id="deleteAgent" method="post" onSubmit="return deleteAgent()" action="deleteAgent.php">
+				        <input type="text" id="dcode" name="code" placeholder="Agent Code" class="textbox" />
+				        <input type="submit" value="Delete Agent" class="button" />
+				    </form>
+				</div>
+			</div>
+			<div id="competitions">
+				<div id="edit_comp" class="card">
+
+				</div>
+				<div id="add_comp" class="card">
+					<form id="addComp" method="post" action="addCompetition.php" onSubmit="return addCompetition()">
+				        <input id="title" class="textbox" name="title" type="text" placeholder="Title" />
+				        <input id="from" class="textbox" name="from" type="text" placeholder="From:DD/MM/YY" />
+				        <input id="to" class="textbox" name="to" type="text" placeholder="To:DD/MM/YY" />
+				        <textarea name="condition" id="condition" placeholder="Conditions"></textarea>
+				        <textarea name="prize" id="prize" placeholder="Prizes"></textarea>
+				        <input type="submit" class="button" value="Add Competition" />
+				    </form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
