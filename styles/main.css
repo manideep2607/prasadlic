@@ -13,8 +13,8 @@ ol,ul {
 }
 
 body {
-	background: #fff;
-	/*background:#f8c301;*/
+	/*background: #fff;*/
+	background:#f8c301;
 	font-family:Open Sans, Helvetica, Arial, sans-serif;
 }
 
@@ -129,7 +129,7 @@ body {
 #content-wrap {
 	width:1000px;
 	overflow:hidden;
-	background:#FFFFFF;
+	background:#fff;
 	margin:10px auto;
 	position:relative;
 	box-shadow:0px 0px 5px #999999;
@@ -141,6 +141,7 @@ body {
 
 #footer{
 	width:100%;
+	padding: 30px 0px;
 	text-align: center;
 }
 

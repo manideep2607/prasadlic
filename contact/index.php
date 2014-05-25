@@ -13,4 +13,7 @@
     <img src="../img/profile.jpg" />
     </div>
 </div>
+<?php
+include('../includes/footer.html');
+?>
 </body>
