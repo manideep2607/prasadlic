@@ -34,12 +34,11 @@ function goBack(){
 	return false;
 }
 
-function loadAdmin(){
+function loadPage(){
 	$.ajax({
-		url:"adminpanel.html",
+		url:"getPage.php",
 		success:function($html) {
 			$("body").html($html);
-			
 		}
 	});
 }
@@ -59,7 +58,7 @@ function showError(n){
 		break;
 		case "1":
 		$("#load").html("loading<br/><img src=\"../img/loader.gif\" />");
-		loadAdmin();
+		loadPage();
 		break;
 		default:
 		break;
@@ -239,4 +238,14 @@ function editScroll(){
 		}
 	});
     return false;
+}
+
+function logout(){
+	$.ajax({
+		type:"GET",
+		url:"logout.php",
+		success:function(response){
+			loadPage();
+		}
+	});
 }
