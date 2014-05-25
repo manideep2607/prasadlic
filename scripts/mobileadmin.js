@@ -1,5 +1,39 @@
 getCompXML();
 
+function openAction(n){
+	switch(n){
+		case 1://open Agents
+			$("#actionPage").show();
+			$("#agents").show();
+			$("#actionTitle").html("Agents");
+			$("#menuPage").hide();
+		break;
+		case 2://open Competitions
+			$("#actionPage").show();
+			$("#competitions").show();
+			$("#actionTitle").html("Competitions");
+			$("#menuPage").hide();
+		break;
+		case 3://open Scroll Text
+			$("#actionPage").show();
+			$("#scroll").show();
+			$("#actionTitle").html("Scroll Text");
+			$("#menuPage").hide();
+		break;
+		default:
+			return false;
+		break;
+	}
+}
+
+function goBack(){
+	//go to the menu page
+	$(".action").hide();
+	$("#actionPage").hide();
+	$("#menuPage").show();
+	return false;
+}
+
 function loadAdmin(){
 	$.ajax({
 		url:"adminpanel.html",
@@ -189,4 +223,20 @@ function editCompetition ($id) {
 	$("#prize").val(prize[$id]);
 	deleteCompetition($id);
 	getCompXML();
+}
+
+function editScroll(){
+
+	$("#status").html("");
+	$scrollText = $("#scrollText").val();
+	$.ajax({
+		type:"POST",
+		url:"editScroll.php",
+		data:{scrollText:$scrollText},
+		success:function(response){
+			showResponse(response);
+			$("#scrollText").val("");
+		}
+	});
+    return false;
 }

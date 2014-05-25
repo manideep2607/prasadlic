@@ -1,13 +1,14 @@
 <div id="container">
+	<div id="status"></div>
 	<div id="menuPage" class="page">
 		<div id="header">
 			<img src="../img/spy.png"/>
 			<p>What do you want to edit?</p>
 		</div>
 		<div id="menu">
-			<button id="agents" onclick="return openAction(1)">Agents</button><br>
-			<button id="competitions" onclick="return openAction(2)">Competitions</button><br>
-			<button id="scroll" onclick="return openAction(3)">Scroll Text</button>
+			<button id="agentsButton" onclick="openAction(1)">Agents</button><br>
+			<button id="competitionsButton" onclick="return openAction(2)">Competitions</button><br>
+			<button id="scrollButton" onclick="return openAction(3)">Scroll Text</button>
 		</div>
 		<div id="logout">
 			<button onclick="return logout()">Logout</button>
@@ -15,11 +16,10 @@
 	</div>
 
 	<div id="actionPage" class="page">
-		<div id="back"><a href="" onclick="return goBack()"><img src="../img/menu.png"/></a></div>
-		<div id="status"></div>
+		<div id="back"><a href="" onclick="return goBack()"><img src="../img/back.png"/></a></div>
 		<div id="actionTitle">Agents</div>
 		<div id="actionUI">
-			<div id="agents">
+			<div id="agents" class="action">
 				<div id="agent_add" class="card">
 				    <form id="addAgent" method="post" onSubmit="return addAgent()" action="addAgent.php">
 				        <input type="text" id="code" name="code" placeholder="Agent Code" class="textbox" />
@@ -35,7 +35,7 @@
 				    </form>
 				</div>
 			</div>
-			<div id="competitions">
+			<div id="competitions" class="action">
 				<div id="edit_comp" class="card">
 
 				</div>
@@ -48,6 +48,14 @@
 				        <textarea name="prize" id="prize" placeholder="Prizes"></textarea>
 				        <input type="submit" class="button" value="Add Competition" />
 				    </form>
+				</div>
+			</div>
+			<div id="scroll" class="action">
+				<div id="scrollCard" class="card">
+					<form id="editScroll" method="post" action="editScroll.php" onSubmit="return editScroll()">
+						<textarea name="scrollText" id="scrollText" placeholder="Scroll Text"></textarea>
+						<input type="submit" class="button" value="Edit Scroll Text" />
+					</form>
 				</div>
 			</div>
 		</div>
