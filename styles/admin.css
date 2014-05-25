@@ -250,3 +250,67 @@ h1 {
 	margin:10px 0px;
 	float:left;
 }
+
+#scroll {
+	width:900px;
+	margin:auto;
+	background:#E7E7E7;
+	border-radius:3px;
+	box-shadow:0px 0px 5px #333333;
+	display:block;
+	padding:50px;
+	overflow:hidden;
+}
+
+#scroll textarea{
+	width:882px;
+	height:80px;
+	line-height:normal;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	border-top:1px solid #999999;
+	border-left:1px solid #999999;
+	border-bottom:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+	border-radius:1px;
+	color:#333333;
+	padding:0px 8px;
+	float:left;
+}
+
+#scroll .button{
+	width:166px;
+	height:40px;
+	border-radius:3px;
+	background:#024282;
+	color:#FFFFFF;
+	font-family:Open Sans, Helveltica, Arial, sans-serif;
+	font-size:16px;
+	line-height:normal;
+	text-align:center;
+	font-weight:400;
+	border:1px solid #024282;
+	margin:10px 0px;
+	float:left;
+}
+
+#logoutDiv{
+	width: 900px;
+	margin: auto;
+}
+
+#logout {
+	width:166px;
+	height:40px;
+	border-radius:3px;
+	background:#024282;
+	color:#FFFFFF;
+	font-family:Open Sans, Helveltica, Arial, sans-serif;
+	font-size:16px;
+	line-height:normal;
+	text-align:center;
+	font-weight:400;
+	border:1px solid #024282;
+	margin:10px 0px;
+	float:left;
+}

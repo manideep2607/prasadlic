@@ -103,7 +103,7 @@ function addCompetition(){
 	return false;
 }
 
-function loadAdmin(){
+function loadPage(){
 	$.ajax({
 		url:"admin.php",
 		success:function($html) {
@@ -120,7 +120,7 @@ function showError(n){
 		break;
 		case "1":
 		$("#load").html("loading<br/><img src=\"../img/loader.gif\" />");
-		loadAdmin();
+		loadPage();
 		break;
 		default:
 		break;
@@ -169,4 +169,30 @@ function verifyForm(){
 		postForm(params);
 	}
 	return false;
+}
+
+function editScroll(){
+
+	$("#status").html("");
+	$scrollText = $("#scrollText").val();
+	$.ajax({
+		type:"POST",
+		url:"editScroll.php",
+		data:{scrollText:$scrollText},
+		success:function(response){
+			showResponse(response);
+			$("#scrollText").val("");
+		}
+	});
+    return false;
+}
+
+function logout(){
+	$.ajax({
+		type:"GET",
+		url:"logout.php",
+		success:function(response){
+			loadPage();
+		}
+	});
 }

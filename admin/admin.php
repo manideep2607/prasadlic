@@ -39,6 +39,17 @@ if(isset($_SESSION['usr'])):
 
 </div>
 
+<div id="scroll">
+    <h1>Edit Scroll Text</h1>
+    <form id="editScroll" method="post" action="editScroll.php" onSubmit="return editScroll()">
+        <textarea name="scrollText" id="scrollText" placeholder="Scroll Text"></textarea>
+        <input type="submit" class="button" value="Edit Scroll Text" />
+    </form>
+</div>
+
+<div id="logoutDiv">
+    <button id="logout" onclick="logout()">Logout</button>
+</div>
 <?php else:
 header('Location:../admin/');
 ?>
